@@ -9,9 +9,13 @@
 </head>
 
 <body>
-  <h1>Social Dominance Orientation Test</h1>
+  <article>
+    <h1>Social Dominance Orientation Test</h1>
+    <p>More accurate successor of RWA</p>
+  </article>
 
-  <form action="">
+
+  <form id="form1" action="">
     <article>
       <p>1. Some groups of people are simply not the equals of others.</p>
       <input type="radio" id="1">
@@ -42,7 +46,7 @@
 
     <article>
       <p>3. This country would be better off if we cared less about how equal
-    all people were.</p>
+    all groups were.</p>
       <input type="radio" id="1">
       <label for="1">very negative</label>
       <input type="radio" id="2">
@@ -99,7 +103,7 @@
     </article>
 
     <article>
-      <p>7. To get ahead in life, it is sometimes necessary for us to step on others.</p>
+      <p>7. To get ahead in progress, it is sometimes necessary to step on others.</p>
       <input type="radio" id="1">
       <label for="1">very negative</label>
       <input type="radio" id="2">
@@ -198,10 +202,14 @@
     </article>
 
     <article>
-      <input type="submit" id="Submit" value="Done">
+      <input type="submit" id="Submit" value="Done" onclick="hide()">
       <input type="reset" id="reset">
     </article>
   </form>
 
+  <p>Based on: </p><a href="https://dash.harvard.edu/bitstream/handle/1/3207711/Sidanius_SocialDominanceOrientation.pdf?sequence=1">page 21</a>
+
 </body>
+
+<script>  src="scripts.js"  </script>
 </html>
