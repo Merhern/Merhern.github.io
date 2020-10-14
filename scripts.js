@@ -1,8 +1,4 @@
-function hide() {
-  var f = document.getElementById("form1");
-  if (f.style.display === "none") {
-    f.style.display = "block";
-  } else {
-    f.style.display = "none";
-  }
+function move() {
+  document.getElementById("form1").style.visibility = "hidden";
+  document.getElementById("form2").style.visibility = "visible";
 }
