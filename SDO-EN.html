@@ -14,7 +14,7 @@
     <p>More accurate successor of RWA</p>
   </article>
 
-  <form id="form1" action="">
+  <form id="form1" method="POST" action="/action_page.php">
     <article>
       <p>Some groups of people must be kept in their place.</p>
       <input required type="radio" id="1">
@@ -242,12 +242,11 @@ same chance in life.</p>
     </article>
 
     <article>
-      <input required type="button" id="Submit" value="Done" onclick="move()">
-      <input required type="reset" id="reset">
+      <input type="button" id="Submit" value="Done" onclick="move()">
+      <input type="reset" id="reset">
     </article>
-  </form>
 
-  <form action="" id="form2">
+  <section id="form2">
     <article>
       <p>My gender is ___. </p>
       <input required type="radio" id="male">
@@ -325,9 +324,10 @@ same chance in life.</p>
     </article>
 
     <article>
-      <input required type="submit" id="Finish" value="See results" onclick="finish()">
+      <input type="submit" id="finish" value="See statistics" onclick="results_EN()">
     </article>
 
+  </section>
   </form>
 
   <p>Based on <a href="https://s3.us-east-2.amazonaws.com/wcasa/old-website-resources/SDO7%2BScale%2B16%2Bitems%2B%25281%2529.pdf">SDO7 Scale.</a></p>
@@ -335,9 +335,10 @@ same chance in life.</p>
 </body>
 
 <script src="scripts.js"></script>
-<script>
-function finish() {
-  document.location.href = "results.html";
+<<script>
+function results_EN() {
+  //document.location.href = "results.html";
 }
 </script>
+
 </html>
