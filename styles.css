@@ -2,6 +2,10 @@ h1 {
   text-align: center;
 }
 
-li {
+article {
   text-align: center; margin-bottom: 2rem
+}
+
+p {
+  text-height: 2rem;
 }
