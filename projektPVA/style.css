@@ -1,0 +1,68 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 1.25rem;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+li a:hover {
+  color: red;
+  border-bottom: 4px solid yellow;
+}
+
+.active {
+  color: red;
+  border-bottom: 4px solid yellow;
+
+}
+
+ul li img {
+  height: 2.85rem; margin-left: 8%; margin-right: 0.25rem;
+}
+
+.sm {
+  float: right;
+}
+
+.sm a img {
+  height: 2.5rem; margin-left: 0; margin-right: 0.9rem;
+}
+
+#nabidka {
+  margin-top: 1.5rem;
+}
+
+#nabidka article {
+  float: left; margin-left: 8%; width: 16rem
+}
+
+@media(max-width: 930px) {
+  .sm {
+    float: left; margin-top: 1rem;
+    margin-left: 25%;
+  }
+
+  li {
+    float: none;
+  }
+
+  li a {
+    margin: 0;
+    padding-top: 1rem;
+  }
+}
