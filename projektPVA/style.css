@@ -48,7 +48,7 @@ ul li img {
 }
 
 #nabidka article {
-  float: left; margin-left: 8%;
+  float: left; margin-left: 8%; width: 16rem
 }
 
 @media(max-width: 930px) {
