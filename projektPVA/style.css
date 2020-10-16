@@ -13,7 +13,7 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1.5rem;
   text-decoration: none;
   font-size: 2rem
 }
@@ -28,4 +28,8 @@ li a:hover {
   border-bottom: ;
   border-bottom: 4px solid yellow;
 
+}
+
+ul li img {
+  height: 2rem;
 }
