@@ -16,7 +16,8 @@ li a {
   text-align: center;
   margin-left: 1.75rem;
   text-decoration: none;
-  font-size: 2rem
+  font-size: 2rem;
+  font-family: sans-serif;
 }
 
 li a:hover {
@@ -31,9 +32,13 @@ li a:hover {
 }
 
 ul li img {
-  height: 2.75rem; margin-left: 6%;
+  height: 2.85rem; margin-left: 6%;
 }
 
 .sm {
   float: right;
+}
+
+.sm a img {
+  height: 2.7rem; margin-left: 1.4rem; margin-right: 0.9rem;
 }
