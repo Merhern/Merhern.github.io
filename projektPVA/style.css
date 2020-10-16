@@ -46,6 +46,7 @@ ul li img {
 @media(max-width: 930px) {
   .sm {
     float: left; margin-top: 1rem;
+    margin-left: 30%;
   }
 
   li {
