@@ -43,10 +43,18 @@ ul li img {
   height: 2.5rem; margin-left: 0; margin-right: 0.9rem;
 }
 
+#nabidka {
+  margin-top: 1.5rem;
+}
+
+#nabidka article {
+  float: left; margin-left: 8%;
+}
+
 @media(max-width: 930px) {
   .sm {
     float: left; margin-top: 1rem;
-    margin-left: 30%;
+    margin-left: 25%;
   }
 
   li {
