@@ -14,7 +14,7 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding-left: 1.75rem;
+  margin-left: 1.75rem;
   text-decoration: none;
   font-size: 2rem
 }
@@ -26,9 +26,12 @@ li a:hover {
 
 .active {
   color: red;
-  border-bottom: ;
   border-bottom: 4px solid yellow;
 
+}
+
+ul li img {
+  height: 2.75rem; margin-left: 6%;
 }
 
 .sm {
