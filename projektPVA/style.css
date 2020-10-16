@@ -31,18 +31,6 @@ li a:hover {
 
 }
 
-ul li im {
-  height: 5rem;
-  margin-left: 6%;
-}
-
-section {
+.sm {
   float: right;
-  margin: 0
-  padding: 0;
-  list-style-type: none;
-}
-
-section a img {
-  height: 2.8rem; float: left;
 }
