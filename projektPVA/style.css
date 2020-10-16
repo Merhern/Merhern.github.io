@@ -20,8 +20,11 @@ li a {
 
 li a:hover {
   color: red;
+  border-bottom-color: yellow;
 }
 
 .active {
+  color: red;
+  border-bottom-color: yellow;
 
 }
