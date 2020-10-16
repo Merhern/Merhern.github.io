@@ -13,7 +13,7 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 1.5rem 2rem;
   text-decoration: none;
   font-size: 2rem
 }
@@ -26,5 +26,6 @@ li a:hover {
 .active {
   color: red;
   border-bottom: ;
+  border-bottom: 4px solid yellow;
 
 }
