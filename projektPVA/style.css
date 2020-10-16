@@ -43,7 +43,7 @@ ul li img {
   height: 2.5rem; margin-left: 0; margin-right: 0.9rem;
 }
 
-@media(max-size: 930px) {
+@media(max-width: 930px) {
   .sm {
     float: left; margin-top: 1rem;
   }
