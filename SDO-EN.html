@@ -12,7 +12,7 @@
   <article>
     <h1>Social Dominance Orientation Test</h1>
     <p>More accurate successor of RWA</p>
-    <p>Disclaimer: When people say a group, they usually think of ethnicity or religion, but it can also be billionares, disabled, unmarried, voters of some party, uneducated, etc.</p>
+    <p>Disclaimer: When people say a group, they usually think of ethnicity or religion, but it can also be billionares, disabled, bisexual, married, voters of some party, uneducated, nationalists etc.</p>
   </article>
 
   <form method="POST" action="/send.php">
@@ -263,7 +263,7 @@
 
       <article>
         <p>I'm ___ years old.</p>
-        <input required type="number" id="age" min="5" max="120">
+        <input required type="number" id="age" name="age" min="5" max="120">
       </article>
 
       <article>
@@ -275,7 +275,37 @@
         <input required type="radio" name="SES" id="average">
         <label for="average">Average</label><br>
         <input required type="radio" name="SES" id="low">
-        <label for="again">Poorer</label><br>
+        <label for="low">Poorer</label><br>
+      </article>
+
+      <article>
+        <p>I am ___ religious.</p>
+        <input required type="radio" name="religion" id="very">
+        <label for="very">very</label><br>
+        <input required type="radio" name="religion" id="moderatly">
+        <label for="moderatly">moderatly</label><br>
+        <input required type="radio" name="religion" id="somewhat">
+        <label for="somewhat">somewhat</label><br>
+        <input required type="radio" name="religion" id="not">
+        <label for="not">not</label><br>
+      </article>
+
+      <article>
+        <p>I am ___. (To be accurate I will consider everyone with two or more great-grandparents of other race than the rest of your ancestors as mixed).</p>
+        <input required type="radio" name="race" id="black">
+        <label for="black">Black</label><br>
+        <input required type="radio" name="race" id="white">
+        <label for="white">Caucasian (White, Near Eastern, Jews)</label><br>
+        <input required type="radio" name="race" id="mongoloid">
+        <label for="mongoloid">Mongoloid (East Asians, Southeast Asians)</label><br>
+        <input required type="radio" name="race" id="indian">
+        <label for="indian">Native American</label><br>
+        <input required type="radio" name="race" id="southasian">
+        <label for="southasian">South Asian (Indians, Bengalis)</label><br>
+        <input required type="radio" name="race" id="australoid">
+        <label for="australoid">Australo-Melanesians (Native Papuans, Aboriginal Australians and Native Melanesians,...)</label><br>
+        <input required type="radio" name="race" id="mixed">
+        <label for="mixed">Mixed / Other (~ Latinos, Central Asians, Siberians and other mixed ethnicites)</label><br>
       </article>
 
       <article>
@@ -297,7 +327,7 @@
         <input required type="radio" name="economy" id="command">
         <label for="command">completely maintained by the government</label><br>
         <input required type="radio" name="economy" id="marx">
-        <label for="marx">socialized and controlled by workers themselves</label><br>
+        <label for="marx">socialized and controlled by the workers themselves</label><br>
         <input required type="radio" name="economy" id="eu">
         <label for="eu">a mix of both private companies and state controlled bussiness</label><br>
         <input required type="radio" name="economy" id="rc">
@@ -305,7 +335,7 @@
         <input required type="radio" name="economy" id="cc">
         <label for="cc">as much deregulated as possible</label><br>
         <input required type="radio" name="economy" id="wut">
-        <label for="wut">topic for other people, because I do not understand it</label><br>
+        <label for="wut">a topic for other people, because I do not understand it</label><br>
       </article>
 
       <article>
