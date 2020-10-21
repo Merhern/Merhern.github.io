@@ -1,29 +1,29 @@
 <?php
-    $_GET["one"] = $one;
-    $_GET["one"] = $two;
-    $_GET["one"] = $three;
-    $_GET["one"] = $four;
-    $_GET["one"] = $five;
-    $_GET["one"] = $six;
-    $_GET["one"] = $seven;
-    $_GET["one"] = $eight;
-    $_GET["one"] = $nine;
-    $_GET["one"] = $ten;
-    $_GET["one"] = $eleven;
-    $_GET["one"] = $twelve;
-    $_GET["one"] = $thirteen;
-    $_GET["one"] = $fourteen;
-    $_GET["one"] = $fifteen;
-    $_GET["one"] = $sixteen;
-    $_GET["one"] = $gender;
-    $_GET["one"] = $age;
-    $_GET["one"] = $SES;
-    $_GET["one"] = $religion;
-    $_GET["one"] = $race;
-    $_GET["one"] = $social;
-    $_GET["one"] = $economy;
-    $_GET["one"] = $kids;
-    $_GET["one"] = $meat;
+    $_POST["one"] = $one;
+    $_POST["one"] = $two;
+    $_POST["one"] = $three;
+    $_POST["one"] = $four;
+    $_POST["one"] = $five;
+    $_POST["one"] = $six;
+    $_POST["one"] = $seven;
+    $_POST["one"] = $eight;
+    $_POST["one"] = $nine;
+    $_POST["one"] = $ten;
+    $_POST["one"] = $eleven;
+    $_POST["one"] = $twelve;
+    $_POST["one"] = $thirteen;
+    $_POST["one"] = $fourteen;
+    $_POST["one"] = $fifteen;
+    $_POST["one"] = $sixteen;
+    $_POST["one"] = $gender;
+    $_POST["one"] = $age;
+    $_POST["one"] = $SES;
+    $_POST["one"] = $religion;
+    $_POST["one"] = $race;
+    $_POST["one"] = $social;
+    $_POST["one"] = $economy;
+    $_POST["one"] = $kids;
+    $_POST["one"] = $meat;
     $SDO_Score = $one + $two + $three + $four + $five + $six + $seven + $eight + $nine + $ten + $eleven + $twelve + $thirteen + $fourteen + $fifteen + $sixteen;
 
     if (($one <> "") && ($two <> "") && ($three <> "") && ($four <> "") && ($five <> "") && ($six <> "") && ($seven <> "") && ($eight <> "") &&
@@ -31,6 +31,7 @@
           ($gender <> "") && ($age <> "") && ($SES <> "") && ($religion <> "") && ($race <> "") && ($social <> "") && ($economy <> "") && ($kids <> "") &&
           ($meat <> "")) {
             echo $SDO_Score;
+            echo "Done";
 
         }
 
