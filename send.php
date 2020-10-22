@@ -1,5 +1,5 @@
 <?php
-  $servername = "localhost";
+/*  $servername = "localhost";
   $username = "serf";
   $password = "serf12345";
 
@@ -44,6 +44,6 @@
       && ($age <> "") && ($SES <> "") && ($religion <> "") && ($race <> "") && ($social <> "") && ($economy <> "") && ($kids <> "") && ($meat <> ""))
       {
         echo $SDO_Score;
-        echo "Done";      
-      }
+        echo "Done";
+      }*/
 ?>
