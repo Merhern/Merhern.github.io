@@ -48,18 +48,20 @@
       {
         echo "You didn't fill something and you are stuck here. Go back and try again.";
       }
-  elseif ((((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) > 9) &&
-        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) > 9)) &&
-        (((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) < -6) &&
-        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) < -6)))
+  elseif ((((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) > 11) &&
+        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) > 11)) &&
+        (((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) < -11) &&
+        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) < -11)))
       {
         echo "I think you can't read, bruh. Go back and try again.";
+        //send fail data
       }
   else
       {
         setcookie("My_SDO_Score", $SDO, 0);
         echo("your sdo score is: " . $SDO);
         header('Location: results.html');
+        //send sdo data
 
       }
 
