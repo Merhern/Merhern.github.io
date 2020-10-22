@@ -1,5 +1,5 @@
 <?php
-  /*$servername = "localhost";
+  $servername = "localhost";
   $username = "serf";
   $password = "serf12345";
 
@@ -11,7 +11,7 @@
     die("Connection failed: " . $conn->connect_error);
   }
   echo "Connected successfully";
-*/
+
 
   $one = $_POST["one"];
   $two = $_POST["two"];
@@ -46,13 +46,21 @@
       ($nine == "") && ($ten == "") && ($eleven == "") && ($twelve == "") && ($thirteen == "") && ($fourteen == "") && ($fifteen == "") && ($sixteen == "") && ($gender == "")
       && ($age == "") && ($SES == "") && ($religion == "") && ($race == "") && ($social == "") && ($economy == "") && ($kids == "") && ($meat == ""))
       {
-        echo "nah";
+        echo "You didn't fill something and you are stuck here. Go back and try again.";
       }
-      else {
+  elseif ((((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) > 9) &&
+        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) > 9)) &&
+        (((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) < -6) &&
+        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) < -6)))
+      {
+        echo "I think you can't read, bruh. Go back and try again.";
+      }
+  else
+      {
         setcookie("My_SDO_Score", $SDO, 0);
-
         echo("your sdo score is: " . $SDO);
-
         header('Location: results.html');
+
       }
+
 ?>
