@@ -14,30 +14,36 @@
 
 
   $_POST["one"] = $one;
-  $_POST["one"] = $two;
-  $_POST["one"] = $three;
-  $_POST["one"] = $four;
-  $_POST["one"] = $five;
-  $_POST["one"] = $six;
-  $_POST["one"] = $seven;
-  $_POST["one"] = $eight;
-  $_POST["one"] = $nine;
-  $_POST["one"] = $ten;
-  $_POST["one"] = $eleven;
-  $_POST["one"] = $twelve;
-  $_POST["one"] = $thirteen;
-  $_POST["one"] = $fourteen;
-  $_POST["one"] = $fifteen;
-  $_POST["one"] = $sixteen;
-  $_POST["one"] = $gender;
-  $_POST["one"] = $age;
-  $_POST["one"] = $SES;
-  $_POST["one"] = $religion;
-  $_POST["one"] = $race;
-  $_POST["one"] = $social;
-  $_POST["one"] = $economy;
-  $_POST["one"] = $kids;
-  $_POST["one"] = $meat;
-  $SDO_Score = $one + $two + $three + $four + $five + $six + $seven + $eight + $nine + $ten + $eleven + $twelve + $thirteen + $fourteen + $fifteen + $sixteen 
-  if (($one <> "") && ($two <> "") && ($three <> "") && ($four <> "") && ($five <> "") && ($six <> "") && ($seven <> "") && ($eight <> "") &&       ($nine <> "") && ($ten <> "") && ($eleven <> "") && ($twelve <> "") && ($thirteen <> "") && ($fourteen <> "") && ($fifteen <> "") && ($sixteen <> "") &&        ($gender <> "") && ($age <> "") && ($SES <> "") && ($religion <> "") && ($race <> "") && ($social <> "") && ($economy <> "") && ($kids <> "") &&        ($meat <> "")) {          echo $SDO_Score;          echo "Done";      }
+  $_POST["two"] = $two;
+  $_POST["three"] = $three;
+  $_POST["four"] = $four;
+  $_POST["five"] = $five;
+  $_POST["six"] = $six;
+  $_POST["seven"] = $seven;
+  $_POST["eight"] = $eight;
+  $_POST["nine"] = $nine;
+  $_POST["ten"] = $ten;
+  $_POST["eleven"] = $eleven;
+  $_POST["twelve"] = $twelve;
+  $_POST["thirteen"] = $thirteen;
+  $_POST["fourteen"] = $fourteen;
+  $_POST["fifteen"] = $fifteen;
+  $_POST["sixteen"] = $sixteen;
+  $_POST["gender"] = $gender;
+  $_POST["age"] = $age;
+  $_POST["SES"] = $SES;
+  $_POST["religion"] = $religion;
+  $_POST["race"] = $race;
+  $_POST["social"] = $social;
+  $_POST["economy"] = $economy;
+  $_POST["kids"] = $kids;
+  $_POST["meat"] = $meat;
+  $SDO_Score = $one + $two + $three + $four + $five + $six + $seven + $eight + $nine + $ten + $eleven + $twelve + $thirteen + $fourteen + $fifteen + $sixteen
+  if (($one <> "") && ($two <> "") && ($three <> "") && ($four <> "") && ($five <> "") && ($six <> "") && ($seven <> "") && ($eight <> "") &&
+      ($nine <> "") && ($ten <> "") && ($eleven <> "") && ($twelve <> "") && ($thirteen <> "") && ($fourteen <> "") && ($fifteen <> "") && ($sixteen <> "") && ($gender <> "")
+      && ($age <> "") && ($SES <> "") && ($religion <> "") && ($race <> "") && ($social <> "") && ($economy <> "") && ($kids <> "") && ($meat <> ""))
+      {
+        echo $SDO_Score;
+        echo "Done";      
+      }
 ?>
