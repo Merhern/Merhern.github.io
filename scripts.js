@@ -3,9 +3,7 @@ function move() {
   document.getElementById("form2").style.display = "block";
 }
 
-function results() {
-  document.getElementById("form2").style.display = "none";
-  document.getElementById("form3").style.display = "block";
-
-  document.getElementById("sdo_result").innerHTML = document.getElementByName("economy").value;
+function cookie() {
+  var x =  document.cookie;
+  document.getElementById("sdo").innerHTML = x;
 }

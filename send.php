@@ -1,5 +1,5 @@
 <?php
-/*  $servername = "localhost";
+  /*$servername = "localhost";
   $username = "serf";
   $password = "serf12345";
 
@@ -11,7 +11,7 @@
     die("Connection failed: " . $conn->connect_error);
   }
   echo "Connected successfully";
-
+*/
 
   $_POST["one"] = $one;
   $_POST["two"] = $two;
@@ -38,12 +38,18 @@
   $_POST["economy"] = $economy;
   $_POST["kids"] = $kids;
   $_POST["meat"] = $meat;
-  $SDO_Score = $one + $two + $three + $four + $five + $six + $seven + $eight + $nine + $ten + $eleven + $twelve + $thirteen + $fourteen + $fifteen + $sixteen
-  if (($one <> "") && ($two <> "") && ($three <> "") && ($four <> "") && ($five <> "") && ($six <> "") && ($seven <> "") && ($eight <> "") &&
-      ($nine <> "") && ($ten <> "") && ($eleven <> "") && ($twelve <> "") && ($thirteen <> "") && ($fourteen <> "") && ($fifteen <> "") && ($sixteen <> "") && ($gender <> "")
-      && ($age <> "") && ($SES <> "") && ($religion <> "") && ($race <> "") && ($social <> "") && ($economy <> "") && ($kids <> "") && ($meat <> ""))
+
+  $Score = $one + $two + $three + $four + $five + $six + $seven + $eight + $nine + $ten + $eleven + $twelve + $thirteen + $fourteen + $fifteen + $sixteen;
+  $SDO = $Score / 16;
+
+  if (($one == "") && ($two == "") && ($three == "") && ($four == "") && ($five == "") && ($six == "") && ($seven == "") && ($eight == "") &&
+      ($nine == "") && ($ten == "") && ($eleven == "") && ($twelve == "") && ($thirteen == "") && ($fourteen == "") && ($fifteen == "") && ($sixteen == "") && ($gender == "")
+      && ($age == "") && ($SES == "") && ($religion == "") && ($race == "") && ($social == "") && ($economy == "") && ($kids == "") && ($meat == ""))
       {
-        echo $SDO_Score;
-        echo "Done";
-      }*/
+
+      }
+      else {
+        setcookie("My_SDO_Score", $SDO, 0);
+        header('Location: results.html');
+      }
 ?>
