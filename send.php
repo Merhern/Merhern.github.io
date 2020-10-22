@@ -13,31 +13,31 @@
   echo "Connected successfully";
 */
 
-  $_POST["one"] = $one;
-  $_POST["two"] = $two;
-  $_POST["three"] = $three;
-  $_POST["four"] = $four;
-  $_POST["five"] = $five;
-  $_POST["six"] = $six;
-  $_POST["seven"] = $seven;
-  $_POST["eight"] = $eight;
-  $_POST["nine"] = $nine;
-  $_POST["ten"] = $ten;
-  $_POST["eleven"] = $eleven;
-  $_POST["twelve"] = $twelve;
-  $_POST["thirteen"] = $thirteen;
-  $_POST["fourteen"] = $fourteen;
-  $_POST["fifteen"] = $fifteen;
-  $_POST["sixteen"] = $sixteen;
-  $_POST["gender"] = $gender;
-  $_POST["age"] = $age;
-  $_POST["SES"] = $SES;
-  $_POST["religion"] = $religion;
-  $_POST["race"] = $race;
-  $_POST["social"] = $social;
-  $_POST["economy"] = $economy;
-  $_POST["kids"] = $kids;
-  $_POST["meat"] = $meat;
+  $one = $_POST["one"];
+  $two = $_POST["two"];
+  $three = $_POST["three"];
+  $four = $_POST["four"];
+  $five = $_POST["five"];
+  $six = $_POST["six"];
+  $seven = $_POST["seven"];
+  $eight = $_POST["eight"];
+  $nine = $_POST["nine"];
+  $ten = $_POST["ten"];
+  $eleven = $_POST["eleven"];
+  $twelve = $_POST["twelve"];
+  $thirteen = $_POST["thirteen"];
+  $fourteen = $_POST["fourteen"];
+  $fifteen = $_POST["fifteen"];
+  $sixteen = $_POST["sixteen"];
+  $gender = $_POST["gender"];
+  $age = $_POST["age"];
+  $SES = $_POST["SES"];
+  $religion = $_POST["religion"];
+  $race = $_POST["race"];
+  $social = $_POST["social"];
+  $economy = $_POST["economy"];
+  $kids = $_POST["kids"];
+  $meat = $_POST["meat"];
 
   $Score = $one + $two + $three + $four + $five + $six + $seven + $eight + $nine + $ten + $eleven + $twelve + $thirteen + $fourteen + $fifteen + $sixteen;
   $SDO = $Score / 16;
@@ -46,10 +46,13 @@
       ($nine == "") && ($ten == "") && ($eleven == "") && ($twelve == "") && ($thirteen == "") && ($fourteen == "") && ($fifteen == "") && ($sixteen == "") && ($gender == "")
       && ($age == "") && ($SES == "") && ($religion == "") && ($race == "") && ($social == "") && ($economy == "") && ($kids == "") && ($meat == ""))
       {
-
+        echo "nah";
       }
       else {
         setcookie("My_SDO_Score", $SDO, 0);
-        header('Location: results.html');
+
+        echo("your sdo score is: " . $SDO);
+
+        //header('Location: results.html');
       }
 ?>
