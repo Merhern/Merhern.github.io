@@ -53,6 +53,6 @@
 
         echo("your sdo score is: " . $SDO);
 
-        //header('Location: results.html');
+        header('Location: results.html');
       }
 ?>
