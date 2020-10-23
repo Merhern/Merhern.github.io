@@ -29,3 +29,7 @@ p {
 li {
   font-size: 1.1rem;
 }
+
+#results p {
+  position: static; bottom: 0; margin: auto;
+}

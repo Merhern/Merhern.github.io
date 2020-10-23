@@ -5,16 +5,16 @@ function move() {
 
 function cookie() {
   var x =  parseFloat (document.cookie.split("=")[1]);
-  var y = x / 1.89404761904761904762;
-  var zz = (x - 1.89404761904761904762) / 0.85238095238095238095;
-  var ndp;
+  var y = x / 1.90952380952380952381;
+  var z_score = (x - 1.90952380952380952381) / 0.85238095238095238095;
   var m = x / 2.04642857142857142857;
   var f = x / 1.77261904761904761905;
+
+  console.log(z_score);
 
   function GetZPercent(z) {
 
     // z == number of standard deviations from the mean
-
     // if z is greater than 6.5 standard deviations from the mean the
     // number of significant digits will be outside of a reasonable range
 
@@ -41,15 +41,16 @@ function cookie() {
 
     sum += 0.5;
 
-    return sum;
+    return sum * 100;
   }
 
   document.getElementById("sdo").innerHTML = "Your Social Dominance Orientation is: " + x.toFixed(2);
 
-  document.getElementById("compared").innerHTML = "That is " + y.toFixed(2) + "x more than average US citizen (~ 1.89)";
-  document.getElementById("nd").innerHTML = "You score higher than "+ GetZPercent(zz) +"% of people in the US";
-  document.getElementById("female").innerHTML = "That is " + f.toFixed(2) + "x more than average US female (~ 1.77)";
-  document.getElementById("male").innerHTML = "That is " + m.toFixed(2) + "x more than average US male (~ 2.05)";
+  document.getElementById("compared").innerHTML = "That is " + y.toFixed(2) + "x more than average US citizen. (~ 1.91)";
+  document.getElementById("nd").innerHTML = "You score higher than of " + GetZPercent(z_score).toFixed(2) + "% people in the US.";
+  document.getElementById("female").innerHTML = "That is " + f.toFixed(2) + "x more than average US female. (~ 1.77)";
+  document.getElementById("male").innerHTML = "That is " + m.toFixed(2) + "x more than average US male. (~ 2.05)";
 
 
 }
+j
