@@ -44,12 +44,28 @@ function cookie() {
     return sum * 100;
   }
 
-  document.getElementById("sdo").innerHTML = "Your Social Dominance Orientation score is: " + x.toFixed(2);
+  if (navigator.language == "cs-CZ") {
+    document.getElementById("sdo").innerHTML = "Tvé skóre Sociálně dominantní orientace je: " + x.toFixed(2);
 
-  document.getElementById("compared").innerHTML = "> That is " + y.toFixed(2) + "x more than average in the United States. (~ 1.91) <";
-  document.getElementById("nd").innerHTML = "> You score higher than " + GetZPercent(z_score).toFixed(2) + "% of United States citizens <";
-  document.getElementById("female").innerHTML = "> You score higher than " + GetZPercent(f_score).toFixed(2) + "% of women in the US <";
-  document.getElementById("male").innerHTML = "> You score higher than " + GetZPercent(m_score).toFixed(2) + "% of men in the US <";
+    document.getElementById("compared").innerHTML = "> To je " + y.toFixed(2) + "x íce než průměrné skóre v USA (~ 1.91) <";
+    document.getElementById("nd").innerHTML = "> Tvé skóre je vyšší než " + GetZPercent(z_score).toFixed(2) + " % amerických občanů <";
+    document.getElementById("female").innerHTML = "> Tvé skóre je vyšší než " + GetZPercent(m_score).toFixed(2) + " % of mužů v USA <";
+    document.getElementById("male").innerHTML = "> Tvé skóre je vyšší než " + GetZPercent(f_score).toFixed(2) + " % of žen v USA <";
+    document.getElementById("fact").innerHTML = "> Toto skóre je z cca 30.5 % dědičné <";
+
+    document.getElementById("i").innerHTML = "Nejvyšší skóre je 5, nejnižší 1.";
+  }
+  else {
+    document.getElementById("sdo").innerHTML = "Your Social Dominance Orientation score is: " + x.toFixed(2);
+
+    document.getElementById("compared").innerHTML = "> That is " + y.toFixed(2) + "x more than average in the United States (~ 1.91) <";
+    document.getElementById("nd").innerHTML = "> You score higher than " + GetZPercent(z_score).toFixed(2) + "% of United States citizens <";
+    document.getElementById("female").innerHTML = "> You score higher than " + GetZPercent(f_score).toFixed(2) + "% of women in the US <";
+    document.getElementById("male").innerHTML = "> You score higher than " + GetZPercent(m_score).toFixed(2) + "% of men in the US <";
+    document.getElementById("fact").innerHTML = "> The score seems to be 30.5% hereditable <";
+
+    document.getElementById("i").innerHTML = "The highest possible score is 5, the lowest 1.";
+  }
 
 
 }
