@@ -44,12 +44,12 @@ function cookie() {
     return sum * 100;
   }
 
-  document.getElementById("sdo").innerHTML = "Your Social Dominance Orientation is: " + x.toFixed(2);
+  document.getElementById("sdo").innerHTML = "Your Social Dominance Orientation score is: " + x.toFixed(2);
 
-  document.getElementById("compared").innerHTML = "That is " + y.toFixed(2) + "x more than average US citizen. (~ 1.91)";
-  document.getElementById("nd").innerHTML = "You score higher than " + GetZPercent(z_score).toFixed(2) + "% of people in the US.";
-  document.getElementById("female").innerHTML = "You score higher than " + GetZPercent(f_score).toFixed(2) + "% of women in the US.";
-  document.getElementById("male").innerHTML = "You score higher than " + GetZPercent(m_score).toFixed(2) + "% of men in the US.";
+  document.getElementById("compared").innerHTML = "> That is " + y.toFixed(2) + "x more than average in the United States. (~ 1.91) <";
+  document.getElementById("nd").innerHTML = "> You score higher than " + GetZPercent(z_score).toFixed(2) + "% of United States citizens <";
+  document.getElementById("female").innerHTML = "> You score higher than " + GetZPercent(f_score).toFixed(2) + "% of women in the US <";
+  document.getElementById("male").innerHTML = "> You score higher than " + GetZPercent(m_score).toFixed(2) + "% of men in the US <";
 
 
 }
