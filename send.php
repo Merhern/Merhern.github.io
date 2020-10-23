@@ -1,5 +1,5 @@
 <?php
-  $servername = "localhost";
+  /*$servername = "localhost";
   $username = "serf";
   $password = "serf12345";
 
@@ -10,7 +10,7 @@
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  echo "Connected successfully";
+  echo "Connected successfully";*/
 
 
   $one = $_POST["one"];
@@ -47,14 +47,6 @@
       && ($age == "") && ($SES == "") && ($religion == "") && ($race == "") && ($social == "") && ($economy == "") && ($kids == "") && ($meat == ""))
       {
         echo "You didn't fill something and you are stuck here. Go back and try again.";
-      }
-  elseif ((((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) > 11) &&
-        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) > 11)) &&
-        (((($one + $two + $three + $four) - ($five + $six + $seven + $eight)) < -11) &&
-        ((($nine + $ten + $eleven + $twelve) - ($thirteen + $fourteen + $fifteen + $sixteen)) < -11)))
-      {
-        echo "I think you can't read, bruh. Go back and try again.";
-        //send fail data
       }
   else
       {

@@ -4,6 +4,8 @@ function move() {
 }
 
 function cookie() {
-  var x =  document.cookie;
-  document.getElementById("sdo").innerHTML = x;
+  var x =  document.cookie.split("=")[1];
+  var y = x / 1.90714286;
+  document.getElementById("sdo").innerHTML = "Your Social Dominance Orientation is:" + x;
+  document.getElementById("compared").innerHTML = "That is " + y + "x more than average US citizen [1]";
 }
