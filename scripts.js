@@ -47,7 +47,7 @@ function cookie() {
   if (navigator.language == "cs-CZ") {
     document.getElementById("sdo").innerHTML = "Tvé skóre Sociálně dominantní orientace je: " + x.toFixed(2);
 
-    document.getElementById("compared").innerHTML = "> To je " + y.toFixed(2) + "x íce než průměrné skóre v USA (~ 1.91) <";
+    document.getElementById("compared").innerHTML = "> To je " + y.toFixed(2) + "x více než průměrné skóre v Americe (~ 1.91) <";
     document.getElementById("nd").innerHTML = "> Tvé skóre je vyšší než " + GetZPercent(z_score).toFixed(2) + " % amerických občanů <";
     document.getElementById("female").innerHTML = "> Tvé skóre je vyšší než " + GetZPercent(m_score).toFixed(2) + " % of mužů v USA <";
     document.getElementById("male").innerHTML = "> Tvé skóre je vyšší než " + GetZPercent(f_score).toFixed(2) + " % of žen v USA <";

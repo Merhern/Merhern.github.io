@@ -11,8 +11,7 @@
 <body>
   <article>
     <h1>Social Dominance Orientation Test</h1>
-    <p>More accurate successor of RWA</p>
-    <p>Disclaimer: When people say a group, they usually think of ethnicity or religion, but it can also be men, smart people, billionares, disabled, bisexual, married, voters of some party, uneducated, nationalists, neurotic people etc.</p>
+    <p id = "discl"> Disclaimer: When you say a group of people, they can have any specs you want. Hair color, race, cultural affiliation, character traits, intellect, religion, political affiliation, etc. A group can also be defined according to their acts. E.g. someone wants all rapists and thieves to be excluded when selecting people for high positions in the state.</p>
   </article>
 
   <form method="POST" action="send.php">
@@ -252,7 +251,7 @@
     </section>
 
     <section id="form2">
-      
+
       <article>
         <p>My gender is ___. </p>
         <input required type="radio" name="gender" id="male" value="M">
@@ -279,6 +278,28 @@
         <label for="average">Average</label><br>
         <input required type="radio" name="SES" id="low" value="3">
         <label for="low">Poorer</label><br>
+      </article>
+
+      <article>
+        <p>I am a ___.</p>
+        <input required type="radio" name="job" id="employer" value="employer">
+        <label for="employer">employer</label><br>
+        <input required type="radio" name="job" id="employed" value="employed">
+        <label for="employed">full-time employee</label><br>
+        <input required type="radio" name="job" id="part" value="part">
+        <label for="part">part-time employee</label><br>
+        <input required type="radio" name="job" id="retired" value="retired">
+        <label for="retired">retired</label><br>
+        <input required type="radio" name="job" id="kiddos" value="kiddos">
+        <label for="kiddos">on maternal leave</label><br>
+        <input required type="radio" name="job" id="student" value="student">
+        <label for="student">student</label><br>
+        <input required type="radio" name="job" id="housewife" value="housewife">
+        <label for="housewife">housewife</label><br>
+        <input required type="radio" name="job" id="can_not" value="can_not">
+        <label for="can_not">unemployed - I am not able to work for reason that has nothing to do with my choice</label><br>
+        <input required type="radio" name="job" id="unemployed" value="unemployed">
+        <label for="unemployed">unemployed, but not looking for work</label><br>
       </article>
 
       <article>
@@ -317,12 +338,14 @@
         <label for="cl">clearly liberal</label><br>
         <input required type="radio" name="social" id="rl" value="3">
         <label for="rl">rather liberal</label><br>
-        <input required type="radio" name="social" id="idk" value="2">
-        <label for="idk">not really sure how should my society work</label><br>
+        <input required type="radio" name="social" id="neut" value="2">
+        <label for="neut">neutral</label><br>
         <input required type="radio" name="social" id="rt" value="1">
         <label for="rt">rather traditional</label><br>
         <input required type="radio" name="social" id="ct" value="0">
         <label for="ct">clearly traditional</label><br>
+        <input required type="radio" name="social" id="idk" value="?">
+        <label for="idk">not really sure how should my society work</label><br>
       </article>
 
       <article>

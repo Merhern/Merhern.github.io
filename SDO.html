@@ -4,170 +4,408 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>SDO test - CZ</title>
+  <title>SDO test - EN</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <h1>Social Dominance Orientation Test</h1>
-  <form action="">
-    <li>1. Some groups of people are simply not the equals of others.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+  <article>
+    <h1>Test sociálně dominantní orientace</h1>
+    <p id="discl">Disclaimer: Když se řekne skupina lidí, může mít jakékoli specifikace, které chcete. Barva vlasů, rasa, příslišnost ke kultuře, charakterové vlastnosti, intelekt, náboženství, politická příslušnost atd. Skupina se může definovat i dle jejich činnů. Např. někdo chce, aby při výběru lidí na vysoké pozice ve státě byli vyřazeni všichni násilníci a zloději. </p>
+  </article>
 
-    <li>2. Some people are just more worthy than others.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+  <form method="POST" action="send.php">
 
-    <li>3. This country would be better off if we cared less about how equal
-    all people were.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+    <section id="form1">
 
-    <li>4. Some people are just more deserving than others.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Určité skupiny lidí musí prostě zůstat na místě kam patří.</p>
+        <input required type="radio" name="one" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="one" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="one" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="one" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="one" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>5. It is not a problem if some people have more of a chance in life than
-    others.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Je nejspíše správné, že některé skupiny lidí mají dominantní postavení vůči jiným.</p>
+        <input required type="radio" name="two" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="two" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="two" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="two" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="two" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>6. Some people are just inferior to others.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Ideální společnost vyžaduje, aby určité skupiny lidí byly nahoře a jiné dole.</p>
+        <input required type="radio" name="three" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="three" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="three" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="three" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="three" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>7. To get ahead in life, it is sometimes necessary for us to step on others.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Některé skupiny lidí jsou prostě podřadné oproti jiným.</p>
+        <input required type="radio" name="four" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="four" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="four" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="four" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="four" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>8. Increased economic equality.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Skupiny lidí na výše společnosti mají stejné zásluhy jako ty na spodu.</p>
+        <input required type="radio" name="five" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="five" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="five" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="five" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="five" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>9. Increased social equality.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Žádná skupina by neměla mít v naší společnosti dominantní postavení.</p>
+        <input required type="radio" name="six" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="six" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="six" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="six" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="six" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>10. If people were treated more equally we would have fewer problems
-    in this country.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Skupiny lidí na spodu společnosti by od nás měly dostat více příležitostí.</p>
+        <input required type="radio" name="seven" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="seven" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="seven" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="seven" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="seven" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>11. In an ideal world, all nations would be equal.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Systém, kde určitá skupina lidí má více více možností než jiná, je dysfunkční.</p>
+        <input required type="radio" name="eight" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="eight" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="eight" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="eight" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="eight" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>12. We should try to treat one another as equals as much as possible.</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Neměli bychom dále šířit myšlenku rovnosti všech skupin ve společnosti.</p>
+        <input required type="radio" name="nine" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="nine" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="nine" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="nine" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="nine" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
 
-    <li>13. It is important that we treat other countries as equals</li>
-    <input type="radio" id="1">
-    <label for="1">velmi negativní</label>
-    <input type="radio" id="2">
-    <label for="2">negativní</label>
-    <input type="radio" id="3">
-    <label for="3">neutrální</label>
-    <input type="radio" id="4">
-    <label for="4">pozitivní</label>
-    <input type="radio" id="5">
-    <label for="5">velmi pozitivní</label>
+      <article>
+        <p>Neměli bychom zařizovat, aby všechny skupiny ve společnosti měly stejnou životní úroveň.</p>
+        <input required type="radio" name="ten" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="ten" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="ten" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="ten" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="ten" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
+
+      <article>
+        <p>Je nespravedlivé podporovat srovnání postavení různých lidských skupin. (kvóty pro určité demogr. skupiny atd.)</p>
+        <input required type="radio" name="eleven" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="eleven" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="eleven" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="eleven" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="eleven" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
+
+      <article>
+        <p>Rovnost skupin lidí by neměla být hlavním lidským cílem.</p>
+        <input required type="radio" name="twelve" id="1" value="1">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="twelve" id="2" value="2">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="twelve" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="twelve" id="4" value="4">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="twelve" id="5" value="5">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
+
+      <article>
+        <p>Měli bychom dát všem skupinám lidí stejné možnosti uspět.</p>
+        <input required type="radio" name="thirteen" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="thirteen" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="thirteen" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="thirteen" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="thirteen" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
+
+      <article>
+        <p>Měli bychom dělat vše možné, abychom srovnali postavení všech liských skupin.</p>
+        <input required type="radio" name="fourteen" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="fourteen" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="fourteen" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="fourteen" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="fourteen" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
+
+      <article>
+        <p>Ať to stojí, co to stojí, měli bychom zařídit, aby lidé ze všech skupin měli stejnou šanci k uspěchu.</p>
+        <input required type="radio" name="fifteen" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="fifteen" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="fifteen" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="fifteen" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="fifteen" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
+
+      <article>
+        <p>Rovnost všech lidských skupin by měla být náš ideál.</p>
+        <input required type="radio" name="sixteen" id="1" value="5">
+        <label for="1">rozhodně nesouhlasím</label><br>
+        <input required type="radio" name="sixteen" id="2" value="4">
+        <label for="2">nesouhlasím</label><br>
+        <input required type="radio" name="sixteen" id="3" value="3">
+        <label for="3">neutrální</label><br>
+        <input required type="radio" name="sixteen" id="4" value="2">
+        <label for="4">souhlasím</label><br>
+        <input required type="radio" name="sixteen" id="5" value="1">
+        <label for="5">rozhodně souhlasím</label><br>
+      </article>
+
+      <article>
+        <input type="button" id="Submit" value="Done" name="age" onclick="move()">
+        <input type="reset" id="reset">
+      </article>
+    </section>
+
+    <section id="form2">
+
+      <article>
+        <p>Mé pohlaví je ___. </p>
+        <input required type="radio" name="gender" id="male" value="M">
+        <label for="male">muž</label><br>
+        <input required type="radio" name="gender" id="female" value="F">
+        <label for="female">žena</label><br>
+        <input required type="radio" name="gender" id="other" value="T">
+        <label for="other">ostatní</label><br>
+        <li>(ostatní = pohlavní identita, která neodpovídá biologickému pohlaví)</li>
+      </article>
+
+      <article>
+        <p>Je mi ___ let.</p>
+        <input required type="number" id="age" name="age" min="5" max="120">
+      </article>
+
+      <article>
+        <p>Jaký je tvůj ekonomický status v porovní s ostatními v ČR?</p>
+        <input required type="radio" name="SES" id="milionare" value="0">
+        <label for="milionare">Nejbohatší 1 % obyvatel</label><br>
+        <input required type="radio" name="SES" id="high" value="1">
+        <label for="high">Bohatší</label><br>
+        <input required type="radio" name="SES" id="average" value="2">
+        <label for="average">Průměrný</label><br>
+        <input required type="radio" name="SES" id="low" value="3">
+        <label for="low">Chudší</label><br>
+      </article>
+
+      <article>
+        <p>Jsem ___.</p>
+        <input required type="radio" name="job" id="employer" value="employer">
+        <label for="employer">zaměstnavatel/ka</label><br>
+        <input required type="radio" name="job" id="employed" value="employed">
+        <label for="employed">zaměstnán/a na plný úvazek</label><br>
+        <input required type="radio" name="job" id="part" value="part">
+        <label for="part">zaměstnán/a na částečný úvazek</label><br>
+        <input required type="radio" name="job" id="retired" value="retired">
+        <label for="retired">důchodce</label><br>
+        <input required type="radio" name="job" id="kiddos" value="kiddos">
+        <label for="kiddos">na mateřské dovolené</label><br>
+        <input required type="radio" name="job" id="student" value="student">
+        <label for="student">student/ka</label><br>
+        <input required type="radio" name="job" id="housewife" value="housewife">
+        <label for="housewife">žena v domácnosti</label><br>
+        <input required type="radio" name="job" id="can_not" value="can_not">
+        <label for="can_not">nezaměstnaný/á - nemohu aktuálně pracovat z důvodu nezávislého na mé vůli</label><br>
+        <input required type="radio" name="job" id="unemployed" value="unemployed">
+        <label for="unemployed">nezaměstnaný/á, ale nehledám si práci</label><br>
+      </article>
+
+      <article>
+        <p>Jsem ___.</p>
+        <input required type="radio" name="religion" id="very" value="3">
+        <label for="very">velmi nábožný/á</label><br>
+        <input required type="radio" name="religion" id="moderatly" value="2">
+        <label for="moderatly">adekvátně nábožný/á</label><br>
+        <input required type="radio" name="religion" id="somewhat" value="1">
+        <label for="somewhat">trochu nábožný/á</label><br>
+        <input required type="radio" name="religion" id="not" value="0">
+        <label for="not">nevěřící</label><br>
+      </article>
+
+      <article>
+        <p>Jsem ___ rasy. (abych byl přesný, budu považovat každého s dvěma a více prarodiči jiné rasy než ostatních předků jako "Dvojí a více").</p>
+        <input required type="radio" name="race" id="black" value="black">
+        <label for="black">Černé</label><br>
+        <input required type="radio" name="race" id="white" value="white">
+        <label for="white">Caucasínské (běloši, lidé z blízkého východu, Židé)</label><br>
+        <input required type="radio" name="race" id="mongoloid" value="mongoloid">
+        <label for="mongoloid">Mongoloidní (Východní / Jihovýchodní Asie)</label><br>
+        <input required type="radio" name="race" id="indian" value="indian">
+        <label for="indian">Rudé (původní Američan)</label><br>
+        <input required type="radio" name="race" id="southasian" value="southasian">
+        <label for="southasian">Ind, Bengálec</label><br>
+        <input required type="radio" name="race" id="australoid" value="australoid">
+        <label for="australoid">Australo-Melanézské (původní Papuánci, Aboridžinci and původní Melanézané,...)</label><br>
+        <input required type="radio" name="race" id="mixed" value="mixed">
+        <label for="mixed">Dvojí a více / Jiné (~ Romové, Hispánci, Lidé ze střední Asie, Sibiře a jiná etnika, která se dají klasifikovat jako smíchané z ras vypsaných výše)</label><br>
+      </article>
+
+      <article>
+        <p>Jsem ___, když jde o sociální normy.</p>
+        <input required type="radio" name="social" id="cl" value="4">
+        <label for="cl">jasně liberalní</label><br>
+        <input required type="radio" name="social" id="rl" value="3">
+        <label for="rl">spíše liberal</label><br>
+        <input required type="radio" name="social" id="neut" value="2">
+        <label for="neut">neutrální</label><br>
+        <input required type="radio" name="social" id="rt" value="1">
+        <label for="rt">spíše tradiční</label><br>
+        <input required type="radio" name="social" id="ct" value="0">
+        <label for="ct">jasně tradiční</label><br>
+        <input required type="radio" name="social" id="idk" value="?">
+        <label for="idk">stále nejistý</label><br>
+
+      </article>
+
+      <article>
+        <p>Naše ekonomika by měla být ___.</p>
+        <input required type="radio" name="economy" id="command" value="command">
+        <label for="command">kompletně řízena státem</label><br>
+        <input required type="radio" name="economy" id="marx" value="marx">
+        <label for="marx">socializována a spravována samotnými pracujícími v dané sféře</label><br>
+        <input required type="radio" name="economy" id="eu" value="eu">
+        <label for="eu">mix státně řízených a privátně vlastněných podniků</label><br>
+        <input required type="radio" name="economy" id="reg" value="reg">
+        <label for="reg">spíše tržní, ale limitována státními regulacemi</label><br>
+        <input required type="radio" name="economy" id="free" value="free">
+        <label for="free">tak deregulovaná, jak je fyzicky možné</label><br>
+        <input required type="radio" name="economy" id="wut" value="?">
+        <label for="wut">téma pro jiné, jelikož tomu nerozumím</label><br>
+      </article>
+
+      <article>
+        <p>Kolik dětí by si chtěl/a ideálně mít?</p>
+        <input required type="radio" name="kids" id="none" value="0">
+        <label for="none">žádné</label><br>
+        <input required type="radio" name="kids" id="one" value="1">
+        <label for="one">1</label><br>
+        <input required type="radio" name="kids" id="two" value="2">
+        <label for="two">2</label><br>
+        <input required type="radio" name="kids" id="three" value="3">
+        <label for="three">3</label><br>
+        <input required type="radio" name="kids" id="four" value="4">
+        <label for="four">4</label><br>
+        <input required type="radio" name="kids" id="five+" value="5">
+        <label for="five">5+</label><br>
+        <input required type="radio" name="kids" id="idk" value="?">
+        <label for="idk">Ještě nevím</label><br>
+      </article>
+
+      <article>
+        <p>Jak nahlížíš na zabití zvířete kvůli jídlu?</p>
+        <input required type="radio" name="meat" id="vegan" value="3">
+        <label for="vegan">Jsem vegan.</label><br>
+        <input required type="radio" name="meat" id="vegetarian" value="2">
+        <label for="vegetarian">Jsem vegetarian.</label><br>
+        <input required type="radio" name="meat" id="limit" value="1">
+        <label for="limit">Jím maso, ale snažím se ho omezovat.</label><br>
+        <input required type="radio" name="meat" id="based" value="0">
+        <label for="based">Nevidím s tím žádný problém.</label><br>
+      </article>
+
+      <article>
+        <input type="submit" id="finish" value="See Results">
+      </article>
+
+    </section>
 
   </form>
+
+  <p>Based on <a href="https://s3.us-east-2.amazonaws.com/wcasa/old-website-resources/SDO7%2BScale%2B16%2Bitems%2B%25281%2529.pdf">SDO7 Scale.</a></p>
+
 </body>
+
+<script src="scripts.js"></script>
+
+
 </html>

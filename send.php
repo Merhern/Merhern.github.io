@@ -32,6 +32,7 @@
   $gender = $_POST["gender"];
   $age = $_POST["age"];
   $SES = $_POST["SES"];
+  $work = $_POST["job"];
   $religion = $_POST["religion"];
   $race = $_POST["race"];
   $social = $_POST["social"];
@@ -44,7 +45,8 @@
 
   if (($one == "") && ($two == "") && ($three == "") && ($four == "") && ($five == "") && ($six == "") && ($seven == "") && ($eight == "") &&
       ($nine == "") && ($ten == "") && ($eleven == "") && ($twelve == "") && ($thirteen == "") && ($fourteen == "") && ($fifteen == "") && ($sixteen == "") && ($gender == "")
-      && ($age == "") && ($SES == "") && ($religion == "") && ($race == "") && ($social == "") && ($economy == "") && ($kids == "") && ($meat == ""))
+      && ($age == "") && ($SES == "") && ($work == "") && ($religion == "") && ($race == "") && ($social == "") && ($economy == "") && ($kids == "") 
+      && ($meat == ""))
       {
         echo "You didn't fill something and you are stuck here. Go back and try again.";
       }

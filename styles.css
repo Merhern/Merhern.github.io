@@ -2,8 +2,12 @@
   display: none;
 }
 
+#discl {
+  width: 55%; text-align: center; margin: auto;
+}
+
 h1 {
-  margin-bottom: 0%; font-size: 2rem
+  font-size: 2rem
 }
 
 article {
